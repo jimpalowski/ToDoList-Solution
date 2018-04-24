@@ -35,7 +35,8 @@ namespace ToDoList.Tests
 
 
       //Assert
-      Assert.IsInstanceOfType(result, typeof(List<Item>));
+      Assert.IsTrue(result.GetType() == typeof(List<Category>));
+      Assert.IsInstanceOfType(result, typeof(List<Category>));
     }
   }
 }
